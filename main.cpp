@@ -13,6 +13,14 @@ void Swap(int* a, int* b)
     *a = *b;  
     *b = temp;  
 }  
+void swap(int &a,int &b)
+{
+	int temp;
+	temp = a;
+	a = b;
+	b = temp;
+}
+
 //1.≤Â»Î≈≈–Ú  
 void InsertSort(int* a, int n)   
 {  
