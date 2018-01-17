@@ -1,4 +1,4 @@
-#include<assert.h>  
+ï»¿#include<assert.h>  
 #include <stdlib.h>  
 #include <iostream>  
 #include<assert.h>  
@@ -21,7 +21,7 @@ void swap(int &a,int &b)
 	b = temp;
 }
 
-//1.²åÈëÅÅĞò  
+//1.æ’å…¥æ’åº  
 void InsertSort(int* a, int n)   
 {  
     for (int i =0; i<n-1;i++)  
@@ -42,7 +42,7 @@ void InsertSort(int* a, int n)
         }  
         a[end + 1] = tmp;  
     }}  
-//Ï£¶ûÅÅĞò  
+//å¸Œå°”æ’åº  
 void ShellSort(int* a, int n)      
 {  
     int gap = n;  
@@ -67,7 +67,7 @@ void ShellSort(int* a, int n)
         }     
         }  
     }  
-//Ñ¡ÔñÅÅĞò  
+//é€‰æ‹©æ’åº  
 void SelectSort1(int* a, int n)  
 {  
     int  min,i ;  
@@ -105,7 +105,7 @@ void SeleteSort2(int* a, int n)
         swap(a[n-i], a[max]);         
     }  
 }  
-//¶ÑÅÅĞò  
+//å †æ’åº  
 void AdjustHeap(int *a, int root, int len)  
 {  
     int parent = root;  
@@ -144,7 +144,7 @@ void HeapSort(int* a, int len)
         AdjustHeap(a,0, i);  
     }  
 }  
-//Ã°ÅİÅÅĞò  
+//å†’æ³¡æ’åº  
 void BubbleSort(int* a,int len)  
 {  
     for (int i= 0; i < len;i++)  
@@ -158,7 +158,7 @@ void BubbleSort(int* a,int len)
         }  
    }  
 }  
-//¿ìËÙÅÅĞò  
+//å¿«é€Ÿæ’åº  
 int GetMidIndex(int* a, int left, int right)    
 {  
     int mid = left+(left - right) / 2;  
@@ -232,7 +232,7 @@ void QuickSort(int* a, int left, int right)
         QuickSort(a, div + 1, right);  
     }  
 }  
-//¹é²¢ÅÅĞò  
+//å½’å¹¶æ’åº  
 void  Merge(int* a, int* tmp, int begin1, int end1, int begin2, int end2)  
 {  
     int pos = begin1;  
